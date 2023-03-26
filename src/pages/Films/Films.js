@@ -1,12 +1,12 @@
 import React from "react";
-import ListePerso from "./ListePerso";
+import ListeFilms from "./ListeFilms";
 import "../../styles/Pages.css";
 
 function Personnages() {
     return (
         <section>
             <div className="row">
-                <ListePerso />
+                <ListeFilms />
             </div>
         </section>
     );

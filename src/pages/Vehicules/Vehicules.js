@@ -1,12 +1,12 @@
 import React from "react";
-import ListePerso from "./ListePerso";
-import "../../styles/Pages.css";
+import ListeVehicules from "./ListeVehicules";
+import "../../styles/vehicules.css";
 
 function Personnages() {
     return (
         <section>
             <div className="row">
-                <ListePerso />
+                <ListeVehicules />
             </div>
         </section>
     );
