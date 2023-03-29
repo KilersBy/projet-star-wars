@@ -5,11 +5,13 @@ import Personnages from './pages/Personnages/Personnages'
 import Films from './pages/Films/Films'
 import Vehicules from './pages/Vehicules/Vehicules'
 import Details from './pages/Details';
+import Navbar from './components/Navbar/Navbar.js'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Navbar/>
           <Routes>
             <Route exact path='/' element={<Personnages />} />
             <Route exact path='/films' element={<Films/>} />

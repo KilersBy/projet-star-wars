@@ -13,4 +13,16 @@
     justify-content: center;
 }
 
+.info h1 {
+    color: aliceblue;
+}
 
+.returnback {
+    justify-items: center;
+
+}
+
+.imagePersonnages{
+    margin-top: auto;
+    
+}

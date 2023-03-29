@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useNavigate, useParams } from "react-router-dom";
-import "../styles/Details.css";
+import "../styles/Details.css"
 
 export default function Details() {
     const [Personnages, setPersonnages] = useState([]);
@@ -18,7 +18,7 @@ export default function Details() {
                 console.log(err)
             })
     }, []);
-
+    console.log(Personnages)
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -26,15 +26,15 @@ export default function Details() {
       };
 
     return (
-        
         <section className="container">
             <div classname="returnback" >
                 <button onClick={handleClick}>Retour</button>
             </div>
             
-            <div>
-                <h1 className="Nom">{Personnages.name}</h1>
-                <img src={`https://starwars-visualguide.com/assets/img/characters/${(id)}.jpg`}/>
+            <div className="info" >
+                <h1 className="Nom">NOM DU PERSONNAGE : {Personnages.name}</h1>
+                <h3>Taille : {Personnages.height} </h3>
+                <img className="imagePersonnage" src={`https://starwars-visualguide.com/assets/img/characters/${(id)}.jpg`}/>
             </div>
         
         </section >        
