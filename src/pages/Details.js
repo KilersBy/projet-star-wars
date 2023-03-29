@@ -27,11 +27,11 @@ export default function Details() {
 
     return (
         <section className="container">
-            <div classname="returnback" >
-                <button onClick={handleClick}>Retour</button>
+            <div>
+                <button className="returnback" onClick={handleClick}>Retour</button>
             </div>
-            
-            <div className="info" >
+        
+            <div className="info">
                 <h1 className="Nom">NOM DU PERSONNAGE : {Personnages.name}</h1>
                 <h3>Taille : {Personnages.height} </h3>
                 <img className="imagePersonnage" src={`https://starwars-visualguide.com/assets/img/characters/${(id)}.jpg`}/>

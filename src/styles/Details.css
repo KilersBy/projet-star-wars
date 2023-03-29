@@ -18,11 +18,15 @@
 }
 
 .returnback {
-    justify-items: center;
-
+    background-color: rgba(254, 235, 94, 0.634);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-left: 5px;
 }
 
 .imagePersonnages{
     margin-top: auto;
-    
 }
