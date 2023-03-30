@@ -6,6 +6,7 @@ import Films from './pages/Films/Films'
 import Vehicules from './pages/Vehicules/Vehicules'
 import Details from './pages/Details';
 import Navbar from './components/Navbar/Navbar.js'
+import ListeFavoris from './pages/Personnages/ListeFavoris'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/films' element={<Films/>} />
             <Route exact path='/vehicules' element={<Vehicules/>} />
             <Route path='/details/:id' element={<Details/>} />
+            <Route path='/favoris' element={<ListeFavoris/>} />
           </Routes>
       </BrowserRouter >
     </div >

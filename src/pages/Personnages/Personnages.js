@@ -1,6 +1,7 @@
 import React from "react";
 import ListePerso from "./ListePerso";
 import "../../styles/Pages.css";
+import ListeFavoris from "./ListeFavoris";
 
 function Personnages() {
     return (

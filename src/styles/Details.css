@@ -14,10 +14,30 @@
 }
 
 .info h1 {
-    color: aliceblue;
+    color: rgb(239, 245, 250);
+    margin: 2px;
+}
+
+.info h3 {
+    color: rgb(239, 245, 250);
+    margin: 2px;
+}
+
+.info img{
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .returnback {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 10em;
+}
+.returnback button{
     background-color: rgba(254, 235, 94, 0.634);
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -25,6 +45,20 @@
     padding: 10px 15px;
     border-radius: 8px;
     margin-left: 5px;
+}
+
+.returnback {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.returnback button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
 }
 
 .imagePersonnages{
