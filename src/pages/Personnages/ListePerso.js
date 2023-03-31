@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import laser from "../Personnages/laser.gif"
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 
 export default function ListePerso() {
 const [personnages, setPersonnages] = useState([]);
@@ -39,7 +41,6 @@ const navigate = useNavigate();
             listePersonnages.push(personnages.results[i]);
           }
         }
-    
         setPersonnages(listePersonnages);
       }
     
@@ -67,7 +68,10 @@ const navigate = useNavigate();
                 </div>
             </div>
             <div>
-            <Link to={"/favoris"}>Favoris</Link>
+            <div className="linkfav">
+                <Link to={"/favoris"}> <FontAwesomeIcon icon={faStar}/></Link>
+            </div>
+
             </div>            
                 {loader ? (
                 <div className="spinner-wrapper">
@@ -77,12 +81,16 @@ const navigate = useNavigate();
                 <div className="personnages">
                     {personnages.map((prod) =>
                         <div className="wrapper" key={prod.name}>
+                            <div className="fav">
+                                <FontAwesomeIcon icon={faStar} onClick={() => handleClick(getUrlId(prod.url))}/>
+                                <FontAwesomeIcon icon={faUser} onClick={() => handleClick(getUrlId(prod.url))}/>
+                            </div>
                             <div className="card_img">
                                 <img src={`https://starwars-visualguide.com/assets/img/characters/${getUrlId(prod.url)}.jpg`} alt={prod.name} />
                             </div>
                             <div className="cardInfo" >
                                 <h1>{prod.name}</h1>
-                                <button onClick={() => handleClick(getUrlId(prod.url))}>Details</button>
+
                             </div>
                         </div>
                     )}

@@ -14,13 +14,21 @@
     display: none;
 }
 
+.personnages{
+  margin: 40px;
+  box-sizing: border-box;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+}
+
 .wrapper {    
     margin: 40px;
     box-sizing: border-box;
     width: 15%;
     display: inline-block;
     padding: 5px;
-    box-shadow: 0 0 15px 7px rgb(170, 183, 211);
+    box-shadow: 0 0 15px 7px rgba(255, 187, 0, 0.411);
 }
 
 .card_img img {
@@ -56,12 +64,13 @@
     padding: 15px;
     border-radius: 30px;
     background-color: #fff;
-    transition: all 0.5s ease-in-out;
 }
 
 .search-container input:focus {
-  max-width: 500px;
-  background-color: #f8f8f8;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+  max-width: 400px;
+
 }
 
 .search-wrapper{
@@ -83,8 +92,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    background-color: #333;
+    color: #ffffff;
+    background-color: #575656;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -94,17 +103,17 @@
   }
   
   .page-link:hover {
-    background-color: #ef1111;
+    background-color: #f7cb05;
   }
   
   .active .page-link {
-    background-color: rgba(10, 44, 195, 0.438);
+    background-color: rgba(255, 196, 0, 0.459);
     font-weight: bold;
   } 
   
   .page-link:hover,
   .page-link:focus {
-    color: #b3b3b3;
+    color: #575656;
     text-decoration: none;
     outline: none;
   }
@@ -137,3 +146,24 @@
   .page-item:last-child .page-link {
     font-weight: bold;
   }
+
+  .fav{
+    margin-bottom: 5px;
+    padding: 5px;    
+    display: flex;
+    justify-content: right;
+    color: #ffc801;
+    border-bottom: 5px solid rgb(255, 196, 0);
+    font-size: 2vh;
+  }
+  
+.linkfav{
+  font-size: 5vh;
+  color: #f5c518;  
+
+}
+
+.linkfav :hover{
+  font-size: 5vh;
+  color: #f5c518;  
+}
